@@ -18,77 +18,46 @@
         <a href="#formacion">Formación</a>
         <a href="#experiencia">Experiencia</a>
         <a href="#otros-datos">Otros datos</a>
+        <a href="#contacto">Contáctame</a>
     </nav>
 </header>
 
 <main>
-    <address class="tarjeta datos-contacto">
-    <p>Email: <a href="mailto:TU_EMAIL@ejemplo.com">TU_EMAIL@ejemplo.com</a></p>
-</address>
-<section id="contactactame">
-    <h2>Contactame</h2>
-    <form id="form-contactame" class="tarjeta">
-        <div class="campo">
-            <label for="nombre"> Tu nombre</label>
-            <input type="text" id="nombre" name="nombre" maxlength="100" autocomplete="name" required>
-        </div>
-
-        <div class="campo">
-            <label for="email">Tu email</label>
-            <input type="email" id="email" name="email" maxlength="150" autocomplete="email" required>
-        </div>
-
-        <div class="campo">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="5" maxlength="1000" required></textarea>
-        </div>
-
-        <button type="submit" class="boton">Enviar</button>
-        <p id="estado" role="status"></p>
-    </form>
-</section>
-
     <section id="presentacion">
         <h2>Presentación</h2>
-        <p>Una persona dinámica, intuitiva, con una fuerte positividad; me atraen los nuevos retos. Con 
-            muchísimas ganas 
-            de aprender. Observador y minucioso. Me encanta tratar con otras personas
-            , facilitadora del buen ambiente en el trabajo en grupo. Serio, tranquilo y buen trabajador.</p>
+        <p>Una persona dinámica, intuitiva, con una fuerte positividad; me atraen los nuevos retos. Con muchísimas ganas de aprender. Observador y minucioso. Me encanta tratar con otras personas, facilitador del buen ambiente en el trabajo en grupo. Serio, tranquilo y buen trabajador.</p>
     </section>
 
     <section id="formacion">
         <h2>Formación</h2>
-
-                <article class="tarjeta">
+        <article class="tarjeta">
             <p>G. Medio Instalaciones de Telecomunicaciones</p>
-            <h6>Colegio Hogar Afundación · 2020-2022</h6>
+            <p class="detalle">Colegio Hogar Afundación · 2020-2022</p>
         </article>
         <article class="tarjeta">
-            <p>G. Superior en Mantenimiento Electronico</p>
-            <h6>Colegio Hogar Afundación · 2022-2024</h6>
+            <p>G. Superior en Mantenimiento Electrónico</p>
+            <p class="detalle">Colegio Hogar Afundación · 2022-2024</p>
         </article>
         <article class="tarjeta">
-            <p>Cursar Ingenieria de Telecomunicaciones</p>
-            <h6>Universidad de Vigo · 2024-2025</h6>
+            <p>Ingeniería de Telecomunicaciones</p>
+            <p class="detalle">Universidad de Vigo · 2024-2025</p>
         </article>
-        <!-- Aquí van los otros estudios, tú -->
     </section>
 
     <section id="experiencia">
         <h2>Experiencia laboral</h2>
         <article class="tarjeta">
             <p>Operario de vendimia · Pazo Pegullal</p>
-            <h6>Veranos 2021, 2022, 2023</h6>
+            <p class="detalle">Veranos 2021, 2022, 2023</p>
         </article>
         <article class="tarjeta">
             <p>Camarero · Corner Hut</p>
-            <h6>Verano 2024</h6>
+            <p class="detalle">Verano 2024</p>
         </article>
         <article class="tarjeta">
             <p>Fontanero-Electricista · Zunfer Motobombas</p>
-            <h6>2025-2026</h6>
+            <p class="detalle">2025-2026</p>
         </article>
-        <!-- Un <article class="tarjeta"> por trabajo -->
     </section>
 
     <section id="otros-datos">
@@ -101,6 +70,34 @@
                 </ul>
             </li>
         </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctame</h2>
+
+        <address class="tarjeta datos-contacto">
+            <p>Email: <a href="mailto:TU_EMAIL@ejemplo.com">TU_EMAIL@ejemplo.com</a></p>
+        </address>
+
+        <form id="form-contacto" class="tarjeta">
+            <div class="campo">
+                <label for="nombre">Tu nombre</label>
+                <input type="text" id="nombre" name="nombre" maxlength="100" autocomplete="name" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">Tu email</label>
+                <input type="email" id="email" name="email" maxlength="150" autocomplete="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" maxlength="1000" required></textarea>
+            </div>
+
+            <button type="submit" class="boton">Enviar</button>
+            <p id="estado" role="status"></p>
+        </form>
     </section>
 </main>
 </body>

@@ -60,12 +60,17 @@ main {
     margin-bottom: 1.5rem;
 }
 
+/* Texto secundario dentro de las tarjetas (fechas, lugar) */
+.detalle {
+    font-size: 0.65rem;
+    margin-bottom: 0;
+}
+
 /* Bloque oscuro  */
 .bloque-oscuro, footer {
     background-color: var(--verde-oscuro);
     color: var(--verde-claro);
     padding: 5px 15px 5px 15px;
-    
 }
 
 /* Imágenes sin suavizado, para que se vean "cuadradas" */
@@ -74,15 +79,75 @@ img {
     height: auto;
     image-rendering: pixelated;
 }
+
+/* Caja del email */
 .datos-contacto {
     font-style: normal; /* address viene en cursiva por defecto */
+    background-color: var(--verde-oscuro);
+    color: var(--verde-claro);
+    box-shadow: var(--pixel) var(--pixel) 0 rgba(0, 0, 0, 0.25);
+    overflow-wrap: anywhere;
+}
+
+.datos-contacto p {
+    margin-bottom: 0;
 }
 
 .datos-contacto a {
-    color: var(--verde-oscuro);
+    color: var(--verde-claro);
+    text-decoration: underline;
 }
 
 .datos-contacto a:hover {
+    background-color: var(--verde-claro);
+    color: var(--verde-oscuro);
+    text-decoration: none;
+}
+
+/* Formulario de contacto */
+.campo {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    font: inherit;
+    color: var(--verde-oscuro);
+    background-color: transparent;
+    border: calc(var(--pixel) / 2) solid var(--verde-oscuro);
+    padding: 0.5rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 8rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
     background-color: var(--verde-oscuro);
     color: var(--verde-claro);
+}
+
+button.boton {
+    font: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button.boton:hover {
+    background-color: var(--verde-oscuro);
+    color: var(--verde-claro);
+}
+
+#estado {
+    margin-top: 1rem;
+    margin-bottom: 0;
 }
