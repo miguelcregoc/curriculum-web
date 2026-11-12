@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sp">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stiles/css1.css">
-    <link rel="icon" type="image/png" href="img/favicon.webp">
+    <link rel="icon" type="image/webp" href="img/favicon.webp">
     <title>Portfolio</title>
 </head>
+<body>
 <header>
     <h1>Miguel Crego Chaves</h1>
     <nav>
@@ -21,9 +22,36 @@
 </header>
 
 <main>
+    <address class="tarjeta datos-contacto">
+    <p>Email: <a href="mailto:TU_EMAIL@ejemplo.com">TU_EMAIL@ejemplo.com</a></p>
+</address>
+<section id="contactactame">
+    <h2>Contactame</h2>
+    <form id="form-contactame" class="tarjeta">
+        <div class="campo">
+            <label for="nombre"> Tu nombre</label>
+            <input type="text" id="nombre" name="nombre" maxlength="100" autocomplete="name" required>
+        </div>
+
+        <div class="campo">
+            <label for="email">Tu email</label>
+            <input type="email" id="email" name="email" maxlength="150" autocomplete="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" maxlength="1000" required></textarea>
+        </div>
+
+        <button type="submit" class="boton">Enviar</button>
+        <p id="estado" role="status"></p>
+    </form>
+</section>
+
     <section id="presentacion">
         <h2>Presentación</h2>
-        <p>Una persona dinámica, intuitiva, con una fuerte positividad; me atraen los nuevos retos. Con muchísimas ganas 
+        <p>Una persona dinámica, intuitiva, con una fuerte positividad; me atraen los nuevos retos. Con 
+            muchísimas ganas 
             de aprender. Observador y minucioso. Me encanta tratar con otras personas
             , facilitadora del buen ambiente en el trabajo en grupo. Serio, tranquilo y buen trabajador.</p>
     </section>
@@ -75,4 +103,5 @@
         </ul>
     </section>
 </main>
+</body>
 </html>
