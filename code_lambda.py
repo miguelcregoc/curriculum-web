@@ -2,7 +2,7 @@ import json
 import os
 import boto3
 
-sns = boto3.client("sns")          # fuera del handler: se reutiliza
+sns = boto3.client("sns")                  # fuera del handler: se reutiliza
 TOPIC_ARN = os.environ["TOPIC_ARN"]        # variable de entorno que le pase a lambda
 
 MAX_ASUNTO = 99
@@ -20,7 +20,7 @@ def respuesta(codigo, texto):
 
 def lambda_handler(event, context):
     # leo el body (texto) y convertirlo a diccionario.
-    #    Si no existe o el JSON está roto -> 400
+    # Si no existe o el JSON está roto -> 400
     try:
         datos = json.loads(event.get("body"))
     except (TypeError, json.JSONDecodeError):
@@ -28,8 +28,6 @@ def lambda_handler(event, context):
 
     if not (isinstance(asunto, str) and isinstance(email, str) and isinstance(mensaje, str)):
             return respuesta(400, "los campos deben ser texto")
-
-
 
 
     # Saco los campos
