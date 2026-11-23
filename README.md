@@ -8,10 +8,11 @@ Importante: La estructura de este proyecto es meramente explicativa, por ejemplo
 
 ![Vista 1](img/vistaInicial.png)*Figura 1. Vista inicial de la pagina.*
 ![cuestionario](img/vistaCuestionario.png)*Figura 2. Vista del cuestionario.*
+![vista correo](img/vistaEmail.png)*Figura 3. Vista de email recibido.
 
 ## Arquitectura
 
-![Diagrama de flujo](img/DiagramaArquitectura.drawio.png)*Figura 3. Diagrama de flujo de la web*
+![Diagrama de flujo](img/DiagramaArquitectura.drawio.png)*Figura 4. Diagrama de flujo de la web*
 
 ## Servicios de AWS usados
 
