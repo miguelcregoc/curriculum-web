@@ -6,7 +6,7 @@ const estado = document.getElementById("estado");
 const boton = formulario.querySelector('button[type="submit"]');
 
 formulario.addEventListener("submit", async (evento) => {
-    // Evita que el navegador recargue la página al enviar
+    // Evita que el navegador recargue la pagina al enviar
     evento.preventDefault();
 
     const datos = {
@@ -15,7 +15,7 @@ formulario.addEventListener("submit", async (evento) => {
         mensaje: document.getElementById("mensaje").value,
     };
 
-    // Evita envíos duplicados mientras se espera la respuesta
+    // Evita duplicados 
     boton.disabled = true;
     estado.textContent = "Enviando...";
 
@@ -37,7 +37,7 @@ formulario.addEventListener("submit", async (evento) => {
             estado.textContent = "No se pudo enviar. Inténtalo más tarde.";
         }
     } catch (error) {
-        // Sin red, o el navegador bloqueó la petición (CORS)
+        // Sin red, o el navegador bloq petición (CORS)
         console.error(error);
         estado.textContent = "No se pudo conectar. Inténtalo más tarde.";
     } finally {
