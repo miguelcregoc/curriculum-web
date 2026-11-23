@@ -7,7 +7,9 @@ Importante: La estructura de este proyecto es meramente explicativa, por ejemplo
 ## Vista del proyecto
 
 ![Vista 1](img/vistaInicial.png)*Figura 1. Vista inicial de la pagina.*
+
 ![cuestionario](img/vistaCuestionario.png)*Figura 2. Vista del cuestionario.*
+
 ![vista correo](img/vistaEmail.png)*Figura 3. Vista de email recibido.
 
 ## Arquitectura
