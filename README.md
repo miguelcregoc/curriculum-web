@@ -116,7 +116,7 @@ El proyecto se despliega a mano desde la consola de AWS. Uso la región `eu-nort
 
 ### 5. Conectar el formulario con la API
 
-En contact.js, cambia el valor de `API_URL` por tu Invoke URL seguida de `/contacto`, sin barra final.
+En contact.js, cambia el valor de `API_URL` por tu Invoke URL seguida de `/contacto`.
 
 ### 6. Bucket de S3
 
